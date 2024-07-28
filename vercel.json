@@ -22,6 +22,6 @@
       { "src": "/rock_paper_scissor.css", "dest": "/rock_paper_scissor.css" },
       { "src": "/rock_paper_scissor.js", "dest": "/rock_paper_scissor.js" },
       { "src": "/Images/(.*)", "dest": "/Images/$1" },
-      { "src": "/(.*)", "dest": "/rock_paper_scissort.html" }
+      { "src": "/(.*)", "dest": "/rock_paper_scissor.html" }
     ]
   }
