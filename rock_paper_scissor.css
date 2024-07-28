@@ -56,6 +56,17 @@ img{
     color: white;
     font-size: 2rem;
     display: inline;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+@media (max-width: 400px) {
+    .score-board {
+        flex-direction:inherit;
+    }
+    .choices {
+        flex-direction: column;
+    }
+    .choice {
+        margin-bottom: 5px;
+    }
 }
