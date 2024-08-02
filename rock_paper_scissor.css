@@ -1,72 +1,134 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
-h1{
+
+h1 {
     background-color: #081b31;
     color: white;
     height: 5rem;
     line-height: 5rem;
 }
-.choice:hover{
+
+.choice:hover {
     opacity: 0.5;
     cursor: pointer;
     background-color: #081b31;
 }
 
-.choice{
+.choice {
     height: 165px;
     width: 165px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
-img{
+
+img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
-.choices{
+
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
     gap: 3rem;
+    flex-wrap: wrap;
 }
-.score-board{
+
+.score-board {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin-top: 3rem;
-    gap:5rem;
+    gap: 5rem;
+    flex-wrap: wrap;
 }
+
 #user-score,
 #comp-score {
     font-size: 4rem;
 }
-.msg-container{
+
+.msg-container {
     margin-top: 5rem;
 }
-#msg{
-    background-color:#081b31;
+
+#msg {
+    background-color: #081b31;
     color: white;
     font-size: 2rem;
     display: inline;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
+
+@media (max-width: 768px) {
+    .choices {
+        gap: 1.5rem;
+    }
+    
+    .choice {
+        height: 125px;
+        width: 125px;
+    }
+    
+    img {
+        height: 110px;
+        width: 110px;
+    }
+    
+    .score-board {
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+    
+    #msg {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 400px) {
     .score-board {
-        flex-direction:inherit;
+        flex-direction: column;
+        gap: 1rem;
     }
+    
     .choices {
         flex-direction: column;
+        gap: 1rem;
     }
+    
     .choice {
-        margin-bottom: 5px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    img {
+        height: 90px;
+        width: 90px;
+    }
+    
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+    
+    #msg {
+        font-size: 1.2rem;
     }
 }
